@@ -8,7 +8,18 @@ function verifyPalindrome(str) {
 }
 
 // Requisito 2 - Crie a função getHighestIndex
+function getHighestIndex(numbers) {
+  let numeroMaior = numbers[0];
+  let indiceMaior = 0;
 
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] > numeroMaior) {
+      numeroMaior = numbers[index];
+      indiceMaior = index;
+    }
+  }
+  return indiceMaior;
+}
 // Requisito 3 - Crie a função getSmallestIndex
 
 // Requisito 4 - Crie a função getLongestWord

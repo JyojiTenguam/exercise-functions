@@ -21,18 +21,38 @@ function getHighestIndex(numbers) {
   return indiceMaior;
 }
 // Requisito 3 - Crie a função getSmallestIndex
+function getSmallestIndex(numbers) {
+  let numeroMenor = numbers[0];
+  let indiceMenor = 0;
 
+  for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < numeroMenor) {
+      numeroMenor = numbers[index];
+      indiceMenor = index;
+    }
+  }
+  return indiceMenor;
+}
 // Requisito 4 - Crie a função getLongestWord
+function getLongestWord(string) {
+  let longestWord = string[0];
 
+  for (let index = 1; index < string.length; index += 1) {
+    if (string[index].length > longestWord.length) {
+      longestWord = string[index];
+    }
+  }
+  return longestWord;
+}
 // Requisito 5 - Crie a função countHighestNumberMaxOccurrences
 
 // Não modifique as linhas abaixo
 module.exports = {
-  verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => {}),
-  getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => {}),
-  getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => {}),
-  getLongestWord: typeof getLongestWord === 'function' ? getLongestWord : (() => {}),
+  verifyPalindrome: typeof verifyPalindrome === 'function' ? verifyPalindrome : (() => { }),
+  getHighestIndex: typeof getHighestIndex === 'function' ? getHighestIndex : (() => { }),
+  getSmallestIndex: typeof getSmallestIndex === 'function' ? getSmallestIndex : (() => { }),
+  getLongestWord: typeof getLongestWord === 'function' ? getLongestWord : (() => { }),
   countHighestNumberMaxOccurrences: typeof countHighestNumberMaxOccurrences === 'function'
     ? countHighestNumberMaxOccurrences
-    : (() => {}),
+    : (() => { }),
 };

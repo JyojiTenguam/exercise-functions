@@ -1,4 +1,11 @@
 // Requisito 1 - Crie a função verifyPalindrome
+function verifyPalindrome(str) {
+  // Remover espaços e tornar minúsculas todas as letras
+  const cleanedStr = str.toLowerCase().replace(/\s/g, '');
+
+  // Comparar a string original com a string invertida
+  return cleanedStr === cleanedStr.split('').reverse().join('');
+}
 
 // Requisito 2 - Crie a função getHighestIndex
 

@@ -12,7 +12,6 @@ Repositório destinado a resolver exercícios de lógica de programação utiliz
 - [Habilidades desenvolvidas](#habilidades-desenvolvidas)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Como rodar o projeto](#como-rodar-o-projeto)
-- [Testes](#testes)
 - [Autor](#autor)
 
 ## 💡 Sobre
